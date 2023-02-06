@@ -78,13 +78,12 @@ main{
     padding-bottom: 2rem;
 }
 
-.card{
+#intro .card{
     background-color: var(--light-blue);
     margin: 1.5rem 0;
     border-radius: 20px;
     text-align: center;
 }
-
 
 #planning{
     background-color: var(--secondary-color);
@@ -93,10 +92,29 @@ main{
 
 #planning .col{
     margin: 1rem 0;
+    text-align: center;
 }
 
+#planning .col.rounded{
+    background-color: white;
+}
 
+.rounded{
+    border-radius: 10px;
+}
 
+#testimonials .container{
+    text-align: center;
+}
+
+#testimonials .col{
+    background-color: var(--secondary-color);
+    margin: 1.5rem;
+}
+
+#testimonials{
+    margin: 1rem 0 2rem;
+}
 
 
 
@@ -127,7 +145,10 @@ main{
         width: calc((100% / 3 * 2) - 1.5rem);
     }
 
-    
+    #testimonials .col{
+        display: flex;
+    }
+
 }
 
 
