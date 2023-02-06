@@ -1,0 +1,170 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: #0e84fb;
+    --secondary-color: #9792e2;
+    --light-blue: #b4dcfe;
+}
+
+                /* Regole di debug */
+
+
+.debug .logo, .debug .nav{
+    height: 80px;
+    background-color: coral;
+
+}
+
+.debug .box{
+    padding: 1rem;
+}
+
+
+
+
+
+
+
+
+
+                /* Fine regole di debug */
+
+
+                /* Utility */
+
+.flex{
+    display: flex;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.align-center{
+    align-items: center;
+}
+
+
+
+
+
+                /* Fine UItility */
+
+.container{
+    max-width: 600px;
+    margin: auto;
+    
+}
+
+#site-header{
+    background-color: var(--primary-color);
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 80px;
+}
+
+main{
+    padding-top: 100px;
+}
+
+#intro{
+    padding-bottom: 2rem;
+}
+
+.card{
+    background-color: var(--light-blue);
+    margin: 1.5rem 0;
+    border-radius: 20px;
+    text-align: center;
+}
+
+
+#planning{
+    background-color: var(--secondary-color);
+    padding: 2rem;
+}
+
+#planning .col{
+    margin: 1rem 0;
+}
+
+
+
+
+
+
+
+
+                /* Media query */
+
+@media screen and (min-width: 768px){
+    .container{
+         max-width: 738px;
+    }
+
+    #intro .cards{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+
+    #intro .card{
+        width: calc((100% / 3) - 1.5rem);
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+
+    }
+
+    #intro .card:first-child{
+        width: calc((100% / 3 * 2) - 1.5rem);
+    }
+
+    
+}
+
+
+
+@media screen and (min-width: 992px) {
+    .container{
+        max-width: 962px;
+    }
+ 
+    #intro .card:first-child{
+        display: flex;
+    }
+
+    #intro .card:first-child>div{
+        width: 50%;
+    }
+
+    #planning .container{
+        display: flex;
+        justify-content: center;
+    }
+
+    #planning .col{
+        width: 50%;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container{
+        max-width: 1170px;
+    }
+
+}
+
+
+                /* Fine Media query */
+
+
+
+
