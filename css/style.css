@@ -48,8 +48,21 @@
     align-items: center;
 }
 
+.more-rounded{
+    border-radius: 20px;
+}
 
+.less-rounded{
+    border-radius: 40px;
+}
 
+.center{
+    text-align: center;
+}
+
+.margin-tb-1_5{
+    margin: 1.5rem 0;
+}
 
 
                 /* Fine UItility */
@@ -80,41 +93,30 @@ main{
 
 #intro .card{
     background-color: var(--light-blue);
-    margin: 1.5rem 0;
-    border-radius: 20px;
-    text-align: center;
 }
 
-#planning{
+#planning, #benefits{
     background-color: var(--secondary-color);
-    padding: 2rem;
+    padding: 2rem 0;
 }
 
 #planning .col{
     margin: 1rem 0;
-    text-align: center;
 }
 
-#planning .col.rounded{
+#planning .col.less-rounded, #benefits .card{
     background-color: white;
 }
 
-.rounded{
-    border-radius: 10px;
-}
-
-#testimonials .container{
-    text-align: center;
-}
 
 #testimonials .col{
     background-color: var(--secondary-color);
-    margin: 1.5rem;
 }
 
 #testimonials{
     margin: 1rem 0 2rem;
 }
+
 
 
 
@@ -149,6 +151,31 @@ main{
         display: flex;
     }
 
+    #benefits .cards{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+
+    #benefits .card{
+        width: calc(50% - 1.5rem);
+        margin-left: 0.75rem;
+        margin-right: 0.75rem;
+    }
+
+    #about-us .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #about-us .big-col{
+        width: calc(70% - 0.5rem);
+    }
+
+    #about-us .small-col{
+        width: calc(30% - 0.5rem);
+    }
 }
 
 
@@ -174,6 +201,18 @@ main{
     #planning .col{
         width: 50%;
     }
+
+    #benefits .card{
+        width: calc((100% /3) - 1.5rem);
+    }
+
+    #about-us .big-col{
+        width: calc(80% - 0.7rem);
+    }
+
+    #about-us .small-col{
+        width: calc(20% - 0.7rem);
+    }
 }
 
 @media screen and (min-width: 1200px) {
@@ -185,7 +224,3 @@ main{
 
 
                 /* Fine Media query */
-
-
-
-
