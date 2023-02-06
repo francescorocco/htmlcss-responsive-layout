@@ -95,7 +95,7 @@ main{
     background-color: var(--light-blue);
 }
 
-#planning, #benefits{
+#planning, #benefits, #get-started{
     background-color: var(--secondary-color);
     padding: 2rem 0;
 }
