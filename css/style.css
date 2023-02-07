@@ -9,18 +9,14 @@
     --secondary-color: #9792e2;
     --light-blue: #b4dcfe;
 
+    --text-black:#000;
+    --text-white: #fff;
     --bg-white: #fff;
     --bg-dark-gray: #323232;
 }
 
                 /* Regole di debug */
 
-
-.debug .logo, .debug .nav{
-    height: 80px;
-    background-color: coral;
-
-}
 
 .debug .box{
     padding: 1rem;
@@ -67,13 +63,34 @@
     margin: 1.5rem 0;
 }
 
+.margin-left-1_5{
+    margin-left: 1.5rem;
+}
+
+.text-wht{
+    color: var(--text-white);
+}
+
 
                 /* Fine UItility */
+
+html{
+    font-family: 'Open Sans', sans-serif;
+    scroll-behavior: smooth;
+}
 
 .container{
     max-width: 600px;
     margin: auto;
-    
+    padding: 0 1.5rem;
+}
+
+main{
+    padding-top: 100px;
+}
+
+section{
+    scroll-margin-top: 85px;
 }
 
 #site-header{
@@ -86,8 +103,42 @@
     height: 80px;
 }
 
-main{
-    padding-top: 100px;
+#site-header .container{
+    height: 100%;
+}
+
+.logo{
+    display: block;
+}
+
+#hamburger{
+    color: var(--text-white);
+    font-size: 2rem;
+}
+
+#site-header nav{
+    display: none;
+}
+
+#site-header ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+#site-header ul li a{
+    text-decoration: none;
+    
+}
+
+.btn{
+    border-radius: 1rem;
+    padding: 0.4rem 1rem;
+}
+
+.btn-wht{
+    background-color: var(--bg-white);
+    color: var(--text-black);
 }
 
 #intro{
@@ -217,6 +268,14 @@ footer{
 
     #about-us .small-col{
         width: calc(20% - 0.7rem);
+    }
+
+    #hamburger{
+        display: none;
+    }
+
+    #site-header nav{
+        display:block
     }
 }
 
