@@ -9,6 +9,7 @@
     --secondary-color: #9792e2;
     --light-blue: #b4dcfe;
 
+    --text-orange:#fcc061;
     --text-gray:#697e94;
     --text-black:#000;
     --text-white: #fff;
@@ -116,12 +117,24 @@
     padding-bottom: 3rem;
 }
 
+.decoratione-none{
+    text-decoration: none;
+}
+
 .text-wht{
     color: var(--text-white);
 }
 
 .text-gray{
     color: var(--text-gray);
+}
+
+.text-orange{
+    color: var(--text-orange);
+}
+
+.text-black{
+    color: var(--text-black);
 }
 
 .text-secondary-col{
@@ -144,6 +157,10 @@
     line-height: 2rem;
 }
 
+.font-0_9{
+    font-size: 0.9rem;
+}
+
 .font-1_5{
     font-size: 1.5rem;
 }
@@ -156,9 +173,15 @@
     font-size: 3rem;
 }
 
+.font-4{
+    font-size: 4rem;
+}
+
 .font-w6{
     font-weight: 600;
 }
+
+
 
                 /* Fine UItility */
 
@@ -230,7 +253,6 @@ section{
 
 .btn-wht{
     background-color: var(--bg-white);
-    color: var(--text-black);
 }
 
 .blue-btn{
@@ -246,6 +268,10 @@ section{
 .btn-sec-col{
     color: var(--text-white);
     background-color: var(--secondary-color);
+}
+
+.bigger-btn{
+    padding: 1rem 4rem;
 }
 
 #intro .btn i{
