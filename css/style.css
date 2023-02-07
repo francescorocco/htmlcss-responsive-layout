@@ -60,8 +60,20 @@
     text-align: center;
 }
 
+.left{
+    text-align: left;
+}
+
+.margin-tb-1{
+    margin: 1rem 0;
+}
+
 .margin-tb-1_5{
     margin: 1.5rem 0;
+}
+
+.margin-tb-2_5{
+    margin: 2.5rem 0;
 }
 
 .margin-left-1_5{
@@ -74,6 +86,14 @@
 
 .letter-space{
     letter-spacing: 3px;
+}
+
+.width-100{
+    width: 100%;
+}
+
+.line-height-1_8{
+    line-height: 1.8rem;
 }
 
 
@@ -192,11 +212,6 @@ section{
     font-weight: 700;
     font-size: 0.9rem;
     color: var(--text-gray);
-    line-height: 1.8rem;
-}
-
-#intro .card:first-child{
-    text-align: left;
 }
 
 #img-box{
@@ -212,15 +227,39 @@ section{
 
 #planning, #benefits, #get-started{
     background-color: var(--secondary-color);
-    padding: 2rem 0;
+    padding: 7rem 0 3rem;
 }
 
 #planning .col{
     margin: 1rem 0;
 }
 
+#big-h2{
+    margin: 4rem 0 3rem;
+    font-size: 1.8rem;
+}
+
+#planning .col.less-rounded{
+    padding: 2rem 1rem;
+}
+
+#planning .col.less-rounded p{
+    font-style: italic;
+    font-weight: 700;
+}
+
 #planning .col.less-rounded, #benefits .card{
     background-color:var(--bg-white);
+}
+
+#planning span {
+    background-color: var(--secondary-color);
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    margin: auto;
+    line-height: 4rem;
+    border-radius: 50%;
 }
 
 
@@ -265,6 +304,10 @@ footer{
 
     #img-box{
         max-width: none;
+    }
+
+    #big-h2{
+        font-size: 3.5rem;
     }
 
     #testimonials .col{
@@ -329,13 +372,31 @@ footer{
 
     #planning .container{
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
     }
 
-    #planning .col{
+    #big-h2{
+        font-size: 2.5rem;
+        margin: 10rem 0 4rem;
+    }
+
+    #planning .width-100{
+        width: 80%;
+    }
+
+    #planning .col.less-rounded {
+        padding: 1rem 2rem;
+    }
+
+    .left-col{
         width: 50%;
     }
 
+    .right-col{
+        width: 40%;
+        align-self: flex-end;
+    }
+    
     #benefits .card{
         width: calc((100% /3) - 1.5rem);
     }
