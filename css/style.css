@@ -9,6 +9,7 @@
     --secondary-color: #9792e2;
     --light-blue: #b4dcfe;
 
+    --text-gray:#697e94;
     --text-black:#000;
     --text-white: #fff;
     --bg-white: #fff;
@@ -71,6 +72,11 @@
     color: var(--text-white);
 }
 
+.letter-space{
+    letter-spacing: 3px;
+}
+
+
 
                 /* Fine UItility */
 
@@ -92,6 +98,8 @@ main{
 section{
     scroll-margin-top: 85px;
 }
+            
+                        /* header  */
 
 #site-header{
     background-color: var(--primary-color);
@@ -131,9 +139,12 @@ section{
     
 }
 
+                    /* buttons */
+
 .btn{
-    border-radius: 1rem;
+    border-radius: 2rem;
     padding: 0.4rem 1rem;
+    text-decoration: none;
 }
 
 .btn-wht{
@@ -141,12 +152,58 @@ section{
     color: var(--text-black);
 }
 
+.blue-btn{
+    background-color: var(--primary-color);
+    color: white;
+    font-weight: 700;
+}
+
+.big-btn{
+    padding: 0.5rem 3rem;
+}
+
+#intro .btn i{
+    padding-right: 0.5rem;
+}
+
+                    /* intro  */
+
 #intro{
     padding-bottom: 2rem;
 }
 
 #intro .card{
     background-color: var(--light-blue);
+    padding: 1rem 2rem 0;
+}
+
+.icon{
+    color: var(--primary-color);
+    font-size: 5rem;
+}
+
+#intro h3{
+    color:var(--primary-color);
+    margin-top: 1rem;
+}
+
+#intro p {
+    padding: 2rem 0;
+    font-weight: 700;
+    font-size: 0.9rem;
+    color: var(--text-gray);
+    line-height: 1.8rem;
+}
+
+#intro .card:first-child{
+    text-align: left;
+}
+
+#phone-img {
+    width: 100%;
+    display: block;
+    padding: 2rem 0 0 1rem;
+    margin: 0 auto;
 }
 
 #planning, #benefits, #get-started{
