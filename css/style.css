@@ -84,8 +84,32 @@
     margin-left: 1.5rem;
 }
 
+.pad-1_5{
+    padding: 1.5rem;
+}
+
+.pad-top-7{
+    padding-top: 7rem;
+}
+
+.pad-top-3{
+    padding-top: 3rem;
+}
+
+.pad-bot-2{
+    padding-bottom: 2rem;
+}
+
+.pad-bot-3{
+    padding-bottom: 3rem;
+}
+
 .text-wht{
     color: var(--text-white);
+}
+
+.text-gray{
+    color: var(--text-gray);
 }
 
 .text-secondary-col{
@@ -104,11 +128,25 @@
     line-height: 1.8rem;
 }
 
-
 .line-height-2{
     line-height: 2rem;
 }
 
+.font-1_5{
+    font-size: 1.5rem;
+}
+
+.font-2{
+    font-size: 2rem;
+}
+
+.font-3{
+    font-size: 3rem;
+}
+
+.font-w6{
+    font-weight: 600;
+}
 
                 /* Fine UItility */
 
@@ -153,7 +191,6 @@ section{
 
 #hamburger{
     color: var(--text-white);
-    font-size: 2rem;
 }
 
 #site-header nav{
@@ -192,6 +229,11 @@ section{
 
 .big-btn{
     padding: 0.5rem 3rem;
+}
+
+.btn-sec-col{
+    color: var(--text-white);
+    background-color: var(--secondary-color);
 }
 
 #intro .btn i{
@@ -239,7 +281,6 @@ section{
 
 #planning, #benefits, #get-started{
     background-color: var(--secondary-color);
-    padding: 7rem 0 3rem;
 }
 
 #planning .col{
@@ -276,10 +317,6 @@ section{
 
                             /* testimonials */
 
-#testimonials .container h2.text-secondary-col{
-    font-size: 2rem;
-}
-
 #testimonials :first-child p{
     font-weight: 500;
     font-size: 1.2rem;
@@ -312,6 +349,9 @@ section{
 #testimonials{
     margin: 1rem 0 4rem;
 }
+
+
+
 
 footer{
     background-color: var(--bg-dark-gray);
