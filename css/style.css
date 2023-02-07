@@ -8,6 +8,9 @@
     --primary-color: #0e84fb;
     --secondary-color: #9792e2;
     --light-blue: #b4dcfe;
+
+    --bg-white: #fff;
+    --bg-dark-gray: #323232;
 }
 
                 /* Regole di debug */
@@ -105,7 +108,7 @@ main{
 }
 
 #planning .col.less-rounded, #benefits .card{
-    background-color: white;
+    background-color:var(--bg-white);
 }
 
 
@@ -117,7 +120,9 @@ main{
     margin: 1rem 0 2rem;
 }
 
-
+footer{
+    background-color: var(--bg-dark-gray);
+}
 
 
 
