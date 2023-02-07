@@ -72,6 +72,10 @@
     margin: 1.5rem 0;
 }
 
+.margin-top-2_5{
+    margin-top: 2.5rem;
+}
+
 .margin-tb-2_5{
     margin: 2.5rem 0;
 }
@@ -82,6 +86,10 @@
 
 .text-wht{
     color: var(--text-white);
+}
+
+.text-secondary-col{
+    color: var(--secondary-color);
 }
 
 .letter-space{
@@ -96,6 +104,10 @@
     line-height: 1.8rem;
 }
 
+
+.line-height-2{
+    line-height: 2rem;
+}
 
 
                 /* Fine UItility */
@@ -262,13 +274,43 @@ section{
     border-radius: 50%;
 }
 
+                            /* testimonials */
+
+#testimonials .container h2.text-secondary-col{
+    font-size: 2rem;
+}
+
+#testimonials :first-child p{
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+}
 
 #testimonials .col{
     background-color: var(--secondary-color);
+    color: var(--text-white);
+    padding: 1rem;
+}
+
+.circolar-img{
+    object-fit: cover;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 2rem 0
+}
+
+#testimonials .col i{
+    padding: 0 0.3rem;
+}
+
+.name {
+    font-weight: 600;
+    font-size: 1.3rem;
 }
 
 #testimonials{
-    margin: 1rem 0 2rem;
+    margin: 1rem 0 4rem;
 }
 
 footer{
@@ -312,6 +354,12 @@ footer{
 
     #testimonials .col{
         display: flex;
+    }
+
+    .text-box{
+        text-align: start;
+        padding-left: 2rem;
+        margin: auto;
     }
 
     #benefits .cards{
