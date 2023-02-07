@@ -40,6 +40,14 @@
     display: flex;
 }
 
+.relative{
+    position: relative;
+}
+
+.inline-block{
+    display: inline-block;
+}
+
 .between{
     justify-content: space-between;
 }
@@ -70,6 +78,10 @@
 
 .margin-tb-1_5{
     margin: 1.5rem 0;
+}
+
+.margin-bt-1_5{
+    margin-bottom: 1.5rem;
 }
 
 .margin-top-2_5{
@@ -350,8 +362,15 @@ section{
     margin: 1rem 0 4rem;
 }
 
+                        /* about us  */
 
-
+#quote-absolute {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 4rem;
+    color: var(--secondary-color);
+}
 
 footer{
     background-color: var(--bg-dark-gray);
@@ -421,17 +440,21 @@ footer{
     }
 
     #about-us .big-col{
-        width: calc(70% - 0.5rem);
+        width: 60%;
     }
 
     #about-us .small-col{
-        width: calc(30% - 0.5rem);
+        width: 35%;
     }
 
     #phone-img {
         width: 65%;
         padding: 2rem 0 0 0.5rem;
         margin: 0;
+    }
+
+    #about-us h2{
+        font-size: 4rem;
     }
 }
 
