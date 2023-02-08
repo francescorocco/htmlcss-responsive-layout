@@ -17,24 +17,6 @@
     --bg-dark-gray: #323232;
 }
 
-                /* Regole di debug */
-
-
-.debug .box{
-    padding: 1rem;
-}
-
-
-
-
-
-
-
-
-
-                /* Fine regole di debug */
-
-
                 /* Utility */
 
 .flex{
@@ -190,6 +172,11 @@ html{
     scroll-behavior: smooth;
 }
 
+.small-container{
+    max-width: 310px;
+    margin: 0 auto;
+}
+
 .container{
     max-width: 600px;
     margin: auto;
@@ -224,16 +211,12 @@ section{
     display: block;
 }
 
-#hamburger{
-    color: var(--text-white);
-}
 
 #site-header nav{
     display: none;
 }
 
 #site-header ul{
-    display: flex;
     list-style: none;
     align-items: center;
 }
@@ -248,7 +231,6 @@ section{
 .btn{
     border-radius: 2rem;
     padding: 0.4rem 1rem;
-    text-decoration: none;
 }
 
 .btn-wht{
@@ -403,13 +385,15 @@ footer{
 }
 
 
-
-
                 /* Media query */
 
 @media screen and (min-width: 768px){
     .container{
          max-width: 738px;
+    }
+
+    .small-container{
+        max-width: 470px;
     }
 
     #intro .cards{
@@ -491,6 +475,10 @@ footer{
         max-width: 962px;
     }
  
+    .small-container{
+        max-width: 470px;
+    }
+
     #intro .card:first-child{
         display: flex;
     }
